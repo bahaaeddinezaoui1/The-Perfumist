@@ -53,3 +53,24 @@ footer {
     text-align: center;
     margin-top: auto; /* Pushes the footer to the bottom */
 }
+
+
+.main-content > * {
+    /* Your styles here */
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #efe9e9;
+    border-radius: 8px;
+}
+
+aside {
+    background: #efe9e9;
+    border-radius: 8px;
+
+}
+
+.center-text {
+    text-align: center;
+    display: block;
+    width: 100%;
+}

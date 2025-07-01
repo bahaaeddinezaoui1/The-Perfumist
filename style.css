@@ -74,3 +74,40 @@ aside {
     display: block;
     width: 100%;
 }
+
+.social-signup {
+    text-align: center;
+    margin: 1rem 0;
+}
+.social-signup button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+.facebook-btn {
+    background: #3b5998;
+}
+.facebook-btn:hover {
+    background: #2d4373;
+}
+.google-btn {
+    background: #eeeeee;
+    color: #000000 !important;
+    border: 1px solid #ccc;
+}
+.google-btn:hover {
+    background: #e2e2e2;
+    color: #000000;
+}
+.microsoft-btn {
+    background: #2F2F2F;
+}
+.microsoft-btn:hover {
+    background: #1a1a1a;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Perfumist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html">The Perfumist</a></h1>
+        <nav>
+            <ul>
+                <li><a href="top50perfumes.html">Top 50 Perfumes</a></li>
+                <li><a href="new_perfumes.html">New Perfumes</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="login-bar">
+            <form action="/login" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Your username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Your password" required>
+
+                <button type="submit">Login</button>
+                <a href="/register">Register</a>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <section id="about">
+                <h2>About Us</h2>
+                <p>This is a simple paragraph about our amazing company. We strive to deliver the best quality in everything we do.</p>
+            </section>
+
+            <section id="services">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>Web Design</li>
+                    <li>Graphic Design</li>
+                    <li>SEO Optimization</li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>You can reach us at info@example.com or call us at 555-123-4567.</p>
+                <address>
+                    123 Main Street<br>
+                    Anytown, USA 12345
+                </address>
+            </section>
+        </div>
+
+        <aside class="right-sidebar">
+            <h3>Latest News</h3>
+            <p>Check out our new product line launching next month!</p>
+            <p><a href="#">Read more...</a></p>
+
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Partnerships</a></li>
+            </ul>
+
+            <h3>Advertisements</h3>
+            <p>[Ad Banner Here]</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The Perfumist. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

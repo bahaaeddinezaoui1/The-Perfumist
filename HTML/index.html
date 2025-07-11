@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Perfumist</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
 
@@ -29,29 +29,51 @@
                 <input type="password" id="password" name="password" placeholder="Your password" required>
 
                 <button type="submit">Login</button>
-                <a href="/register">Register</a>
+                <a href="signup.html">Register</a>
             </form>
         </div>
     </header>
 
     <main>
         <div class="main-content">
-            <section id="about">
-                <h2>About Us</h2>
+            <section id="about" >
+                <h2 class="center-text">About Us</h2>
                 <p>This is a simple paragraph about our amazing company. We strive to deliver the best quality in everything we do.</p>
             </section>
 
             <section id="services">
-                <h2>Our Services</h2>
-                <ul>
-                    <li>Web Design</li>
-                    <li>Graphic Design</li>
-                    <li>SEO Optimization</li>
-                </ul>
+                <h2 class="center-text">New Perfumes</h2>
+                <div class="carousel">
+                    <button class="carousel-btn prev" onclick="moveCarousel(-1)">&#10094;</button>
+                    <div class="carousel-images">
+                        <img src="../Images/Creed Aventus.jpg" class="carousel-image" style="display:block;">
+                        <img src="../Images/Versace Dylan Blue.jpg" class="carousel-image" style="display:none;">
+                        <img src="../Images/Hacivat Nishane.png" class="carousel-image" style="display:none;">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveCarousel(1)">&#10095;</button>
+                </div>
+                <script>
+                let currentSlide = 0;
+                function showSlide(n) {
+                    const images = document.querySelectorAll('.carousel-image');
+                    if (n >= images.length) currentSlide = 0;
+                    if (n < 0) currentSlide = images.length - 1;
+                    images.forEach((img, i) => {
+                        img.style.display = (i === currentSlide) ? 'block' : 'none';
+                    });
+                }
+                function moveCarousel(dir) {
+                    currentSlide += dir;
+                    const images = document.querySelectorAll('.carousel-image');
+                    if (currentSlide >= images.length) currentSlide = 0;
+                    if (currentSlide < 0) currentSlide = images.length - 1;
+                    showSlide(currentSlide);
+                }
+                </script>
             </section>
 
             <section id="contact">
-                <h2>Contact Us</h2>
+                <h2 class="center-text">Contact Us</h2>
                 <p>You can reach us at info@example.com or call us at 555-123-4567.</p>
                 <address>
                     123 Main Street<br>

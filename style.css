@@ -111,3 +111,50 @@ aside {
 .microsoft-btn:hover {
     background: #1a1a1a;
 }
+
+.carousel {
+    position: relative;
+    width: 400px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-images {
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-image {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.carousel-btn {
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 0 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    transition: background 0.2s;
+}
+.carousel-btn:hover {
+    background: rgba(0,0,0,0.7);
+}
+.carousel-btn.prev {
+    left: -40px;
+}
+.carousel-btn.next {
+    right: -40px;
+}
